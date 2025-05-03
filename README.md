@@ -80,4 +80,4 @@ Contribuições são bem-vindas! Se você tiver alguma sugestão de melhoria, co
 
 ## Licença
 
-Este projeto está sob a licença [GNU] - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+Este projeto está sob a licença GNU General Public License v3.0 - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
