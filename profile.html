@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imagesgram: Profile</title>
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/typography.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+
+        <script src="https://kit.fontawesome.com/f5345150b5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Barra lateral esquerda -->
+            <aside class="sidebar">
+                <h1><a href="index.html">Imagesgram</a></h1>
+                <nav>
+                    <ul>
+                        <li class="item-home"><a href="index.html">Home</a></li>
+                        <li class="item-search"><a href="#">Search</a></li>
+                        <li class="item-explore"><a href="#">Explore</a></li>
+                        <li class="item-profile"><a href="#">Profile</a></li>
+                        <li class="item-theme-toggle">
+                            <a href="#" id="theme-toggle-link" data-theme="light">
+                                <span id="theme-text">Light</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Área central -->
+            <main class="main-content">
+                <section class="profile">
+                    <header class="profile-header">
+                        <div class="profile-image">
+                            <img src="" alt="name of user">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-username">@nomedeusuario</h3>
+                            <p class="profile-full-name">Nome completo da pessoa</p>
+                            <p class="profile-bio">Uma breve descrição sobre mim e meus interesses. asdfasd fas dflak sdf asldkkf asd fla sdf lasdkf asld flkasdjf </p>
+                            <ul class="profile-stats">
+                                <li>Followers:<span>100</span></li>
+                                <li>Following:<span>150</span></li>
+                                <li>Posts:<span>30</span></li>
+                            </ul>
+                            <div class="profile-actions">
+                                <button class="follow-button">Follow</button>
+                                <button class="edit-profile-button">Profile edit</button>
+                            </div>
+                        </div>
+                    </header>
+                    <nav class="profile-tabs">
+                        <ul>
+                            <li class="tab-item active" data-tab="posts">
+                                <a href="#">Posts</a>
+                            </li>
+                            <li class="tab-item" data-tab="reels">
+                                <a href="#">Reels</a>
+                            </li>
+                            <li class="tab-item" data-tab="tagged">
+                                <a href="#">Tagged</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <article class="profile-content">
+                        <div class="profile-view-options">
+                            <button class="grid-view active"><i class="fas fa-th-large"></i></button>
+                            <button class="list-view"><i class="fas fa-list"></i></button>
+                        </div>
+                        <div class="profile-posts-grid"></div>
+                        <div class="profile-reels-grid hidden"></div>
+                        <div class="profile-tagged-grid hidden"></div>
+                    </article>
+                    
+                    <!-- Modal escondido inicialmente -->
+                    <div id="modal" class="modal hidden">
+                        <div class="modal-content">
+                            <div class="modal-image">
+                                <img src="" alt="Imagem ampliada">
+                            </div>
+                            <div class="modal-info-comment">
+                                <textarea placeholder="Escreva um comentário..."></textarea>
+                                <button>Comentar</button>
+                                <button id="close-modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- Barra lateral direita -->
+            <aside class="right-sidebar"></aside>
+        </div>
+        <script src="js/theme.js"></script>
+        <script src="js/profile-image.js"></script>
+    </body>
+</html>

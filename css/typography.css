@@ -1,0 +1,57 @@
+/* Importação de fontes do Google Fonts (se estiver usando) */
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 0.5em;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Leckerli One", cursive;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.profile h3,
+.setor-suggestion h3 {
+  color: #222;
+}
+
+a {
+    color: var(--cor-primaria-claro);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #ce0000;
+  text-decoration: none;
+}
+
+
+button {
+  font-family: inherit; /* Herdar a fonte do body */
+  font-size: 1em;
+}
+
+body.dark-theme h1, h2, h3 {
+  color: white;
+}
+
+body.dark-theme .setor-suggestion h3,
+body.dark-theme .profile h3 {
+  color: white;
+}

@@ -1,0 +1,20 @@
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Em telas menores, os elementos ficam em coluna */
+    /* grid-template-columns: 1fr; Usando Grid */
+  }
+
+  .sidebar {
+    /* order: 3; Usando Grid */
+    /* width: 100%; Usando Grid */
+  }
+
+  .main-content {
+    /* order: 1; Usando Grid */
+  }
+
+  .right-sidebar {
+    /* order: 2; Usando Grid */
+  }
+}

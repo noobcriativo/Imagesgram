@@ -1,0 +1,136 @@
+:root {
+    --cor-fundo-claro: #f9f9f9;
+    --cor-texto-claro: #222;
+    --cor-primaria-claro: #1a1a1a;
+    --cor-secundaria-claro: #6c757d;
+    --cor-fundo-post-claro: #fff;
+
+    --cor-fundo-escuro: #121212;
+    --cor-texto-escuro: #f9f9f9;
+    --cor-primaria-escuro: #bcbcbc;
+    --cor-secundaria-escuro: #ccc;
+    --cor-fundo-post-escuro: #1e1e1e;
+}
+
+body{
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-claro);
+ 
+    /* Transição suave para a mudança de tema*/
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* BARRA LATERAL */
+
+.container .sidebar {
+    /* A barra lateral ocupa 1 parte do espaço disponível */
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #e2e2e2;
+    text-align: center;
+}
+
+/* ÁREA CENTRAL */
+
+.container .container .main-content {
+    background-color: var(--cor-fundo-post-claro);
+    color: var(--cor-texto-claro);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* SETOR DOS STORIES */
+.container .main-content .stories .story-nav {
+    /* Fundo semi-transparente */
+    background: rgba(0,0,0, 0.9);
+    
+    color: #fff;
+}
+
+.container .main-content .stories .story-container .story.not-viewed img {
+  border-color: #c62093;
+}
+
+
+/* SETOR DAS POSTAGENS */
+/* SETOR DAS POSTAGENS: FOOTER */
+/*
+.container .main-content .feed .post .post-footer .action-button .like-button i {
+  color: #262626;
+}
+
+.container .main-content .feed .post .post-footer .action-button .comment-button i {
+  color: #262626;
+}
+
+.container .main-content .feed .post .post-footer .action-button .share-button i {
+  color: #262626;
+}*/
+
+
+/*TEMA ESCURO*/
+
+/* Estilos para o tema escuro (serão aplicados quando uma classe for adicionada ao body) */
+body.dark-theme {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-escuro);
+}
+
+body.dark-theme a {
+    color: var(--cor-primaria-escuro);
+    transition: color 0.3s ease;   
+}
+
+body.dark-theme a:hover {
+    color: #ffff7f;
+}
+
+/* BARRA LATERAL ESQUERDA */
+.container .container .sidebar {
+    border-right-color: #e2e2e2;
+}
+
+body.dark-theme .container .sidebar {
+    border-right-color: #2a2a2a;
+}
+
+
+/* ÁREA CENTRAL ESCURA */
+
+body.dark-theme .container .main-content {
+    background-color: var(--cor-fundo-post-escuro);
+    color: var(--cor-texto-escuro);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme .container .main-content .stories .story-nav{
+    background: rgba(255,255,255, 0.9);
+    color: #000;
+}
+
+body.dark-theme .container .main-content .stories .story-container .story img {
+    border: 3px solid #fff;
+}
+
+body.dark-theme .container .main-content .feed .post .post-content img {
+    border: 2px solid white;
+}
+
+body.dark-theme .far.fa-heart,
+body.dark-theme .far.fa-comment,
+body.dark-theme .fas.fa-paper-plane {
+  color: white;
+}
+
+
+/* BARRA LATERAL DIREITA ESCURA */
+body.dark-theme .container .right-sidebar .borda {
+    border: 1px solid #2a2a2a;
+}
+
+body.dark-theme .container .right-sidebar .setor-login .avatar-user{
+    border: 2px solid white;
+}
+
+body.dark-theme .container .right-sidebar .setor-infor{
+    border-top: 1px solid #2a2a2a;
+}

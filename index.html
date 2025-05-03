@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imagegram: Example</title>
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/typography.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/f5345150b5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>   
+        <div class="container">
+
+            <!-- Barra lateral esquerda -->
+            <aside class="sidebar">
+                <h1><a href="index.html">Imagesgram</a></h1>
+                <nav>
+                    <ul>
+                        <li class="item-home">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="item-search">
+                            <a href="#">Search</a>
+                        </li>
+                        <li class="item-explore">
+                            <a href="#">Explore</a>
+                        </li>
+                        <li class="item-profile">
+                            <a href="#">Profile</a>
+                        </li>
+                        <li class="item-theme-toggle">
+                            <a href="#" id="theme-toggle-link" data-theme="light">
+                                <span id="theme-text">Light</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <!-- Área central -->
+            <main class="main-content">
+                <section class="stories">
+
+                    <button class="story-nav story-nav--prev">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Local dos stories -->
+                    <div class="story-container"></div>
+
+                    <button class="story-nav story-nav--next">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                        </svg>
+                    </button>
+                </section>
+                
+                <!-- Local das postagens-->
+                <section class="feed">
+                    <article class="post">
+                        <header class="post-header">
+                            <div class="user-info">
+                                <a href="profile.html"><img src="img/cover.png" alt="User avatar" class="avatar"></a>
+                                <span class="username"><a href="profile.html">Username</a></span>
+                            </div>
+                        </header>
+                        
+                        <div class="post-content">
+                            <img src="img/Paisagem.jpg" alt="Post content" class="post-image">
+                        </div>
+
+                        <footer class="post-footer">
+                            <div class="post-actions">
+                                <button class="action-button like-button">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                
+                                <button class="action-button comment-button">
+                                    <i class="far fa-comment"></i>
+                                </button>
+
+                                <button class="action-button share-button">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+
+                            <div class="comentario-container">
+                                <p class="comentario limitado">
+
+                                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+
+                                </p>
+                                <button class="more">More</button>
+                            </div>
+                        </footer>
+                    </article> 
+                    
+                    <hr />
+
+                    <article class="post">
+                        <header class="post-header">
+                            <div class="user-info">
+                                <a href="profile.html"><img src="img/cover.png" alt="User avatar" class="avatar"></a>
+                                <span class="username"><a href="profile.html">Username</a></span>
+                            </div>
+                        </header>
+                        
+                        <div class="post-content">
+                            <img src="img/Paisagem.jpg" alt="Post content" class="post-image">
+                        </div>
+            
+                        <footer class="post-footer">
+                            <div class="post-actions">
+                                <button class="action-button like-button">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                
+                                <button class="action-button comment-button">
+                                    <i class="far fa-comment"></i>
+                                </button>
+
+                                <button class="action-button share-button">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+
+                            <div class="comentario-container">
+                                <p class="comentario limitado">
+
+                                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+
+                                </p>
+                                <button class="more">More</button>
+                            </div>
+                        </footer>
+                    </article> 
+                </section>
+            </main>
+            
+            <!-- Barra lateral direita-->
+            <aside class="right-sidebar">
+                <section class="borda setor-login">
+                    <div class="user">
+                        <img src="img/cover.png" alt="User avatar" class="avatar-user">
+                        <span class="username">Username account</span>
+                    </div>
+                </section>
+
+                <section class="borda setor-suggestion">
+                    <h3>Suggestion</h3>
+                    <div class="suggestion">
+                        <img src="img/suggest-1.webp">
+                    </div>
+                    <div class="suggestion">
+                        <img src="img/suggest-2.webp">
+                    </div>
+                    <div class="suggestion">
+                        <img src="img/suggest-3.webp">
+                    </div>
+                </section>
+
+                <section class="setor-infor">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookie</a></li>
+                        <li><a href="#">Term of service</a></li>
+                    </ul>
+                </section>
+            </aside>
+        </div> <!-- Fim do container-->
+        <script src="js/theme.js"></script>
+        <script src="js/stories.js"></script>
+        <script src="js/scroll-stories.js"></script>
+        <script src="js/post-more.js"></script>
+    </body>
+</html>
+
+
