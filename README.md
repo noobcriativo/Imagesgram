@@ -76,7 +76,7 @@ Contribuições são bem-vindas! Se você tiver alguma sugestão de melhoria, co
 
 ## Autor
 
-[Noob Criativo] ([Seu GitHub](https://github.com/noobcriativo))
+([Noob Criativo](https://github.com/noobcriativo))
 
 ## Licença
 
